@@ -1,103 +1,118 @@
 body{
     font-family: verdana;
-    font-size: 10pt;
+    font-size: 20pt;
     margin: 0;
-}
-
-.archbody{
-    margin: auto;
     display: grid;
-    row-gap: 10pt;
-    width: 1240px; 
+    row-gap: 1rem;
+    width: 100%; 
 }
-
 
 
 /* PASEK NAWIGACJI */
 
 nav{
     display: grid;
-    align-items: center;
+    grid-template-areas: 
+    "logo buttons login";
     grid-template-columns: 20% 60% 20%;
-    height: 50pt;
+    height: auto;
     background-color: white;
     text-align: center;
     position: sticky;
     top: 0;
+    
+    border: 0.2rem solid red;
 }
 
 .logo{
-    text-align: right;
-    border: 1pt solid;
-    margin: auto auto auto 0;
-    background-image: url(img/food-icon.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 40%;
-    height: 44pt;
+    display: inline-block;
+    border: 0.2rem solid;
+    margin: 0 auto auto 0;
+    width: 100%;
+    height: 2rem;
 }
 
-ul#options{
-	list-style: none;
-	float: left;
-}
-
-#options li{
+.logo img{
     float: left;
+    width: 100%;
+}
+
+.buttons{
+    display: flex;
+}
+
+#options{
+	list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #options a{
     border: none;
     color: black; 
-    padding: 15px 32px;
+    padding: 1rem 3rem;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
     display: inline-block;
-    font-size: 10pt;
+    font-size: 1rem;
     transition-duration: 0.6s;
-    border-radius: 10pt;
+    border-radius: 1rem;
 }
 
 #options a:hover{
     background-color: #4CAF50;
 }
 
+.hub{
+    text-align: center;
+    padding: 0.5rem 3rem;
+    display: inline-block;
+}
+
 .hub a:hover{
+    text-align: center;
     display: inline-block;
     font-weight: bold;
-    padding: 15px 32px;
-    background-color: #4CAF50;
 }
+
+
 
 /* SEKCJA 1 */
 
 header{
-    height: 315pt;
+    height: 40rem;
     display: grid;
     background-image: url(img/listopad-www.jpg);
-    background-attachment: fixed;
     background-repeat: no-repeat;
-    grid-template-columns: 15% 50% 42.5%;
-    row-gap: 60pt;
+    background-size: cover;
+    grid-template-columns: 15% 40% auto;
+
+    border: 0.2rem solid red;
 }
 
-.top{
+article.top{
     grid-column: 2 / 3;
-    margin: auto;
+    padding: 5rem;
     background-color: rgba(255, 255, 255, 0.527);
-    border-radius: 30pt;
+    border-radius: 3rem;
+
+    border: 0.2rem solid red;
 }
 
-#top > h1{
+article.top h1{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30pt;
+    font-size: 2.5rem;
+    text-align: center;
 }
 
-.top > p{
+article.top p{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20pt;
+    font-size: 1.5rem;
+    justify-content: center;
+    line-height: 1.3;
 }
 
 
@@ -105,37 +120,41 @@ header{
 /* SEKCJA 2 */
 
 main{
-    height: 300pt;
+    height: auto;
     display: grid;
+    grid-template-areas: 
+    "przepis ad";
     grid-template-columns: 75% 25%;
     box-sizing: border-box;
+
+    border: 0.2rem solid red;
     
 }
 
-.content h2, .ad h2{
+article.przepis h2, .ad h2{
     text-align: center;
-    font-size: 20pt;
+    font-size: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgba(255, 255, 255, 0.212);
-    border-radius: 20pt;
+    border-radius: 2rem;
     
 }
 
-.content img{
+article.przepis img{
     float: left;
-    height: 300pt;
-    width: 300pt;
-    margin-right: 5pt;
+    height: 30rem;
+    width: 30rem;
+    margin-right: 0.5rem;
 }
 
-.content p{
+article.przepis p{
     font-family: Verdana, Geneva, Tahoma, monospace;
-    text-align: justify;
-    text-indent: 15pt;
-    line-height: 1.5;
-    font-size: 13pt;
-    padding-top: 30pt;
-    margin-right: 10pt;
+    font-size: 5rem;
+    text-indent: 1rem;
+    line-height: 1.3;
+    font-size: 1rem;
+    padding-top: 3rem;
+    margin-right: 10rem;
 
 }
 
@@ -145,30 +164,38 @@ main{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    border: 0.2rem solid red;
 }
 
 .ad ol{
-    font-size: 14pt;
+    font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    padding: 70pt 40pt 40pt 40pt;
-    /* list-style: upper-roman; */
+    padding: 7rem 4rem 4rem 4rem;
 }
 
 
 
 /* SEKCJA 3 */
 
-.container3{
-    height: 200pt;
+section{
+    height: auto;
     display: grid;
+    grid-template-areas: 
+    "kafelek kafelek kafelek"
+    "kafelek kafelek kafelek";
     grid-template-columns: 33% auto 33%;
-    column-gap: 5pt;
+    grid-template-rows: 20rem 20rem;
+    row-gap: 1rem;
+    column-gap: 0.5rem;
+
+    border: 0.2rem solid red;
 }
 
-.container3 > div{
-    border: 1pt solid rgb(119, 119, 119);
-    border-radius: 20pt;
+section > div{
+    border: 0.2rem solid rgb(119, 119, 119);
+    border-radius: 2rem;
     opacity: 1;
     height: auto;
     transition: .5s ease;
@@ -198,25 +225,25 @@ main{
     background-position: center;
 }
 
-.container3 > div:hover{
+section > div:hover{
     opacity: 0.8;
 }  
 
-.container3 a{
+section a{
     text-align: center;
     display: inline-block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15pt;
+    font-size: 1.5rem;
     background: rgb(224, 224, 224);
-    border: 1pt solid black;
+    border: 0.1rem solid black;
     margin: auto; 
-    height: 20pt;
-    width: 100pt;
-    border-radius: 5pt; 
+    height: 2rem;
+    width: 10rem;
+    border-radius: 0.5rem; 
     
 }
 
-.container3 a:hover{
+section a:hover{
     background-color: black;
     color: white;
     border-color: white;
@@ -233,9 +260,12 @@ a{
 
 footer{
     display: grid;
+    grid-template-areas: 
+    "stopka stopka stopka stopka";
     grid-template-columns: 25% 25% 25% 25%;
-    height: 50pt;
-    /* border: 1pt solid red; */
+    height: 5rem;
+
+    border: 0.2rem solid red;
 }
 
 footer > div{
@@ -264,4 +294,127 @@ footer .three{
 
 footer .four{
     background-color: chocolate;
+}
+
+
+
+/* RESPONSYWNOSC */
+
+
+
+@media only screen and (max-width: 1900px){
+    header{
+        background-size: cover;
+        height: 30rem;
+        background-size: inherit;
+        background-position: right;
+    }
+
+    article.top{
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 1550px){
+    header{
+        grid-template-columns: 10% 40% auto;
+    }
+
+}
+
+@media only screen and (max-width: 1500px){
+    
+    nav{
+        grid-template-columns: 80% 20%;
+        grid-template-areas: 
+        "buttons login";
+    }
+
+    .hub{
+        grid-column: 2 / 3;
+        display: inline;
+    }
+
+    .logo{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1400px){
+    header{
+        grid-template-columns: 40% auto;
+    }
+
+    article.top{
+        grid-column: 1 / 2;
+    }
+}
+
+@media only screen and (max-width: 1180px){
+    
+    nav{
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "buttons"
+        "login";
+        row-gap: 1rem;
+    }
+
+    .buttons{
+        flex-wrap: wrap;
+    }
+    
+    .hub{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    section{
+        height: auto;
+        width: auto;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 20rem 20rem 20rem;
+        grid-template-areas: 
+        "kafelek kafelek"
+        "kafelek kafelek"
+        "kafelek kafelek";
+    }
+
+    header{
+        height: auto;
+        background-image: none;
+        grid-template-columns: 100%;
+    }
+
+    article.przepis img{
+            display: none;
+        }
+
+    article.top{
+        padding: 0;
+    }
+
+    article.przepis h2, .ad h2{
+        text-align: center;
+        font-size: 2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: rgba(255, 255, 255, 0.212);
+        border-radius: 2rem;
+        
+    }
+    
+    article.przepis p{
+        font-family: Verdana, Geneva, Tahoma, monospace;
+        font-size: 5rem;
+        text-indent: 1rem;
+        line-height: 1.3;
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    
+    }
+
 }
