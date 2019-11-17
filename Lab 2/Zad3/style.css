@@ -1,0 +1,27 @@
+
+.container{
+    background-color: gray;
+    padding: 1rem;
+    border: 0.2rem solid;
+    height: auto;
+    margin-top: 10rem;
+    box-sizing: border-box;
+}
+
+#top{
+    height: 5rem;
+}
+
+.row{
+    background-color: white;
+    margin: 0;
+}
+
+.row > div{
+    box-shadow: 0 0 0 0.2rem;
+}
+
+#row2{
+    height: 20rem;
+}
+
