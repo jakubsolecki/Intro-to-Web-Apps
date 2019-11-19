@@ -1,5 +1,10 @@
+body{
+    font-size: 1.5rem;
+}
+
 nav{
     background-image: url(img/red-matrix.jpg);
+
 }
 
 nav > a{
@@ -10,4 +15,11 @@ nav > a{
 nav > a:hover{
     color: white;
     background-color: rgb(0, 110, 255);
+}
+
+#tlo-header{
+    background-image: url(img/woman-car-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 }
