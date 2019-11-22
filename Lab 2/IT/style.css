@@ -2,24 +2,191 @@ body{
     font-size: 1.5rem;
 }
 
+
 nav{
-    background-image: url(img/red-matrix.jpg);
+    background-image: url(img/green.png);
+    padding: 0.6rem;
 
 }
 
-nav > a{
+li .nav-link {
     color: white;
     text-decoration: none;
+    transition-duration: 0.3s;
 }
 
-nav > a:hover{
-    color: white;
-    background-color: rgb(0, 110, 255);
+nav a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 1rem;
 }
 
-#tlo-header{
-    background-image: url(img/woman-car-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
+.WebIT{
+    font-weight: bold;
+    color: rgb(187, 255, 1);
 }
+
+.container-fluid{
+    padding: 0;
+}
+
+header div{
+    height: 48rem;
+}
+
+.carousel-caption{
+    position: absolute;
+    top: 90%;
+    transform: translateY(-40%);
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    left: 0;
+}
+
+.carousel-caption h1{
+    font-size: 4rem;
+    text-shadow: 1px 1px 15px #000000;
+    transform: translateY(-20%);
+}
+
+.carousel-item img{
+    height: inherit;
+}
+
+.display-1, .display-2, .display-3, .display-4{
+    font-size: 4rem;
+}
+
+.services{
+    padding-top: 3rem;
+}
+
+.services-content, .projects-content, .about-content, .join-content{
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.services-header hr, .projects-header hr, .about-header hr, .join-header hr{
+    border-top: 2px solid #222222;
+    width: 95%;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.lead{
+    font-size: 2rem;
+}
+
+.fa-code{
+    color: rgb(255, 136, 0);
+}
+
+.fa-css3{
+    color: rgb(0, 87, 250);
+}
+
+.fa-js{
+    color: rgb(255, 198, 43);
+}
+
+.fa-angular{
+    color: rgb(177, 0, 0);
+}
+
+.fa-react{
+    color: rgb(0, 198, 216);
+}
+
+.fa-vuejs{
+    color: rgb(0, 73, 39);
+}
+
+.fa-code, .fa-css3, .fa-js, .fa-angular, .fa-react, .fa-vuejs{
+    font-size: 5rem;
+}
+
+.rowicons{
+    height: 10rem;
+}
+
+.about img{
+    height: 70%;
+}
+
+.card-title{
+    font-size: 2rem;
+}
+
+.card-text{
+    font-size: 1.5rem;
+}
+.card-img-top{
+    height: 20rem;
+}
+
+.btn{
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1660px){
+    .card-img-top{
+        height: auto;
+    }
+}
+
+@media (max-width: 1200px){
+    .card{
+        margin-top: 2rem;
+    }
+
+    #slajdy{
+        display: none;
+    }
+
+    .services{
+        margin-top: 2rem;
+    }
+
+}
+
+@media (max-width: 992px){
+    .lead{
+        padding-bottom: 2rem;
+    }
+
+    .carousel-caption{
+        position: absolute;
+        top: 70%;
+}
+
+@media (max-width: 768px){
+    .rowicons{
+        height: 20rem;
+    }
+
+    .carousel-caption h1{
+        font-size: 150%;
+    }
+
+    .carousel-caption{
+        position: absolute;
+        top: 60%;
+}
+
+@media (max-width: 576px){
+    .rowicons{
+        height: 30rem;
+    }
+}
+
+/* @media (max-width: 960px){
+    .card-title{
+        font-size: 2rem;
+    }
+    
+    .card-text{
+        font-size: 1.5rem;
+    }
+    
+} */

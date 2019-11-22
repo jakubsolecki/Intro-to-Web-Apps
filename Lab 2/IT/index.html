@@ -11,43 +11,208 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
 
-    <title>IT Outsourcing Company</title>
+    <title>webIT</title>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   </head>
   <body>
-
-    <nav class="nav nav-pills justify-content-end">
-        <a class="nav-item nav-link justify-content-start" href="#" >Logo Firmy</a>
-        <a class="nav-item nav-link" href="#">Usługi</a>
-        <a class="nav-item nav-link" href="#">Wdrożenia</a>
-        <a class="nav-item nav-link" href="#">O Firmie</a>
-        <a class="nav-item nav-link" href="#">Zespół</a>
-        <a class="nav-item nav-link" href="#">Kontakt</a>
+ 
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <i class="fas fa-globe align-center navbar-brand" style="color: rgb(186, 255, 177); height: auto;"></i>  
+        <p class="navbar-brand" href="index.html"> <div class="d-inline-block align-top WebIT" alt="">WebIT</div></p>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#uslugi" style="color: black;">Usługi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#wdrozenia" style="color: black;">Wdrożenia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#o_firmie" style="color: black;">O Firmie</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#dolacz" style="color: black;">Dołącz</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#kontakt" style="color: black;">Kontakt</a>
+              </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
-    <header class="container-fluid">
-      <div class="row" id="tlo-header">
-        <div class="col-md-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet consectetur adipiscing elit pellentesque habitant morbi. Interdum consectetur libero id faucibus nisl tincidunt eget nullam. Bibendum est ultricies integer quis auctor elit sed. Quis enim lobortis scelerisque fermentum dui faucibus. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Aenean et tortor at risus. Dolor sit amet consectetur adipiscing. Interdum varius sit amet mattis. Elit ut aliquam purus sit. Vel risus commodo viverra maecenas accumsan lacus. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius.
-            At ultrices mi tempus imperdiet nulla malesuada pellentesque. Facilisis sed odio morbi quis commodo odio. Tortor id aliquet lectus proin nibh. Volutpat diam ut venenatis tellus in metus vulputate eu. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Id neque aliquam vestibulum morbi. Pellentesque dignissim enim sit amet. Sagittis nisl rhoncus mattis rhoncus urna. Eget arcu dictum varius duis at consectetur. Euismod in pellentesque massa placerat duis ultricies lacus. Sem integer vitae justo eget. Donec ac odio tempor orci. Eget est lorem ipsum dolor. Arcu risus quis varius quam. Sed nisi lacus sed viverra tellus in hac habitasse platea. Sagittis purus sit amet volutpat consequat mauris nunc. Orci ac auctor augue mauris. Odio facilisis mauris sit amet massa vitae tortor condimentum. Etiam tempor orci eu lobortis elementum nibh.
+    <header class="container-fluid" id="slajdy">
+      <div id="slides" class="carousel slide carousel-fade" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#slides" data-slide-to="0" class="active"></li>
+          <li data-target="#slides" data-slide-to="1"></li>
+          <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/woman-car-bg.jpg" id="first" class="d-block w-100">
+            <div class="carousel-caption">
+              <h1>WebIT - TWOJE ZADOWOLENIE JEST NAJWAŻNIEJSZE</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/hand-keyboard.png" id="second" class="d-block w-100">
+            <div class="carousel-caption">
+              <h1>ZAAWANSOWANE ROZWIĄZNIA</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/homepage-hero-mobile.jpg" id="third" class="d-block w-100">
+            <div class="carousel-caption">
+              <h1>ZESPÓŁ TOWORZĄCY Z PASJĄ</h1>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6">
-            
-        </div>
-      </div>
-      <div class="row">
-      </div>
-      <div class="row">
-      </div>
+      </div>         
     </header>
 
-    <main class="container">
+    <div class="container-fluid services">     
+      <div class="row services-header text-center align-items-center no-gutters">
+        <div class="col-lg-12">
+          <a id="uslugi"></a>
+          <h1 class="display-1">Nasze usługi</h1>
+        </div>
+        <hr>
+      </div>
+      <div class="row services-content text-center align-items-center">
+        <div class="col-lg-6">
+          <p class="lead">Oferujemy kompleksowe usługi z zakresu technologii webowych. Zajmujemy się tworzeniem i utrzymywaniem stron internetowych oraz aplikacji webowych.</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="row rowicons">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <i class="fas fa-code"></i>
+              <h3>HTML5</h3>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <i class="fab fa-css3"></i>
+              <h3>CSS3</h3>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <i class="fab fa-js"></i>
+              <h3>JavaScript</h3>
+            </div>
+          </div>
+          <div class="row rowicons">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <i class="fab fa-angular"></i>
+              <h3>Angular</h3>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <i class="fab fa-react"></i>
+              <h3>React</h3>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <i class="fab fa-vuejs"></i>
+              <h3>Vue</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-fluid need4padding">
+      <div class="row projects-header text-center align-items-center no-gutters">
+        <div class="col-lg-12 ">
+          <a id="wdrozenia"></a>
+          <h1 class="display-2">Wdrożenia</h1>
+          <hr>
+        </div>
+      </div>
+      <div class="row projects-content text-center align-items-center">
+        <div class="col-xl-6">
+          <img src="img/F1B.jpg" class="d-block w-100">
+        </div>
+        <div class="col-xl-6">
+          <p class="lead">Na przestrzeni kilku lat wdrożyliśmy dziesiątki rowiązań, budując w ten sposób silną pozycję na rynku. Dzięki zdobytemu doświadczeniu i dobremu rozeznaniu w aktualnych trendach na rynku możemy zaoferować w pełni profesjonalny produkt, dostosowany zarówno do potrzeb klienta jak i wymagań szerokiego grona docelowych odbiorców</p>
+        </div>
+    </div>
 
-    </main>
+    <div class="container-fluid about">
+      <div class="row about-header text-center align-items-center no-gutters">
+        <div class="col-xl-12">
+          <a id="o_firmie"></a>
+          <h1 class="display-3">O firmie</h1>
+          <hr>
+        </div>
+      </div>
+      <div class="row about-content text-center align-items-center">
+        <div class="col-xl-6">
+          <p class="lead">Firma WebIT zadebiutowała na rynku w roku 2015. Wyrosła ze start-up'u założonego przez grupkę uzdolnionych absolwentów krakowskiej uczelni AGH, którzy zapragnęli tworzyć rozwiązania webowe na własnych warunkach. Zespół Naszej firmy składa się z ludzi pełnych pasji, zaangażowania i kreatywności. Najlepszym tego dowodem jest wysoka renoma produktów przez nas tworzonych.</p>
+        </div>
+        <div class="col-xl-6">
+          <img src="img/pwa.jpg" class="d-block w-100">
+        </div>
+      </div>
+    </div>
 
+    <div class="container-fluid team">
+      <div class="row join-header text-center align-items-center no-gutters">
+        <div class="col-lg-12">
+          <a id="dolacz"></a>
+          <h1 class="display-4">Dołącz do nas</h1>
+          <hr>
+          
+        </div>
+      </div>
+      <div class="row join-content text-center align-items-center">
+        <div class="col-xl-4">
+          <div class="card">
+            <img src="img/becoming-a-web-developer-in-2016.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Front end developer</h5>
+              <p class="card-text">Dołącz do naszego zespołu jako front end developer! Poszukujemy programistów obeznanych z HTML5. Reszty Cię nauczymy! </p>
+              <a href="#" class="btn btn-outline-success">Sprawdź</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4">
+          <div class="card">
+            <img src="img/Full-Stack-Developer.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Full stack developer</h5>
+              <p class="card-text">Poszukujemy programisty z doświadczeniem na stanowsiko full stack developera. Wymagamy pełnej znajomości stosu MEAN.</p>
+              <a href="#" class="btn btn-outline-success">Sprawdź</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4">
+          <div class="card">
+            <img src="img/Junior-Database-Developer-tiny.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Junior database developer</h5>
+              <p class="card-text">Jesteś świeżo upieczonym absolwentem studiów inzynierkich z kierunku Informatyka lub pokrewnego? Ta oferta może być dla Ciebie!</p>
+              <a href="#" class="btn btn-outline-success">Sprawdź</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-
-    <footer class="container-fluid">
-
+    <footer> 
+      <div class="container-fluid padding" style="background-color: rgba(22, 141, 22, 0.452);">
+        <hr>
+        <div class="row text-center">
+          <a id="kontakt"></a>
+          <div class="col-lg-12">
+              <hr class="light">
+              <h5>Kontakt</h5>
+              <hr class="light">
+            <p>123-456-789</p>
+            <p>email@domena.pl</p>
+            <p>adres</p>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- Optional JavaScript -->
