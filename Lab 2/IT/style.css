@@ -158,6 +158,11 @@ header div{
     .carousel-caption{
         position: absolute;
         top: 70%;
+    }
+
+    /* .card-img-top{
+        height: 15rem;
+    } */
 }
 
 @media (max-width: 768px){

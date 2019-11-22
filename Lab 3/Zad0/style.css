@@ -1,0 +1,23 @@
+
+div{
+    color: white;
+}
+
+.outer{
+    background: blue;
+    width: 100pt;
+    height: 100pt;
+}
+
+.middle{
+    background: red;
+    width: 75pt;
+    height: 75pt;
+}
+
+.inner{
+    color: black;
+    background: yellow;
+    width: 50pt;
+    height: 50pt;
+}
