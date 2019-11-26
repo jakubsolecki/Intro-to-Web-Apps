@@ -6,7 +6,10 @@ body{
 nav{
     background-image: url(img/green.png);
     padding: 0.6rem;
+}
 
+.navbar{
+    padding: 0;
 }
 
 li .nav-link {
@@ -127,6 +130,18 @@ header div{
 
 .btn{
     font-size: 1.5rem;
+}
+
+footer{
+    width: inherit;
+}
+
+footer .col-lg-12{
+    padding: 0;
+}
+
+footer hr{
+    width: 95%;
 }
 
 @media (max-width: 1660px){

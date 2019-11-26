@@ -6,7 +6,7 @@ body{
     row-gap: 1rem;
     width: 100%; 
 }
-
+ 
 
 /* PASEK NAWIGACJI */
 
@@ -120,6 +120,7 @@ article.top p{
     font-size: 1.5rem;
     justify-content: center;
     line-height: 1.3;
+    padding: 0 10pt;
 }
 
 
@@ -156,6 +157,7 @@ article.przepis img{
 
 .przepis p{
     font-size: 1.5rem;
+    padding: 0 10pt;
 }
 
 .ad{
@@ -191,7 +193,7 @@ section{
     grid-template-rows: 20rem 20rem;
     row-gap: 1rem;
     column-gap: 0.5rem;
-
+    padding: 0 10pt;
     /* border: 0.2rem solid red; */
 }
 

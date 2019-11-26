@@ -1,0 +1,30 @@
+var'y lecą na początek funkcji
+
+const nie pozwala zmieniać przypisania do niego. (Tyczy sie tylko referencji ale nie jej zawartości)
+
+Sładanie stringów: `cośtam ${funkcja np coś licząca} cośtam`
+
+Funckje mozna przypisać do zmiennej. Mozna je przypisywać, przekazywać, etc.
+Funckja może być obiektem, kostruktorem.
+
+Arrow function => lamba z innych języków.
+
+const obj = {x: 1, y: 2}
+const x = obj.x
+const y = obj.y
+const {x, y} = obj
+
+Klasa Array ma wiele zastosowań. (metody: .map -> mapuje na inne elementy, .reduce -> cuda jaja, akumulator, pętla; .filter, .find)
+
+>>Destrukturyzacja
+>>Spread syntax 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>REACT<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+React bazuje na JavaScript. Mamy tu klasy, dziedziczenie.
+
+Konstruktor nosi nazwę constructor, a nie nazwy klasy
+
+Zawsze na dole klasy dajemy metodę render()
+onClick = () => {..} przypisanie anonimowej(?) funkcji do zmiennej
+
+ 
