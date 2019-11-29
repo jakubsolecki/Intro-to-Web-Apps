@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Zad5</title>
+    </head>           
+
+    <body>
+
+        <div id="outer" align="center">
+            1
+            <div id="middle">
+                2
+                <div id="inner">
+                    3        
+                </div>
+            </div>
+        </div>
+
+        <p id="licznik">Hello World!</p>
+
+
+        <script>
+
+            document.getElementById("outer").addEventListener("click", function() { clickMe("niebieski"); }, true);
+
+            document.getElementById("middle").addEventListener("click", function() { clickMe("czerwony"); }, true);
+
+            document.getElementById("inner").addEventListener("click", function() { clickMe("żółty"); }, true);
+
+            function clickMe(str){
+                document.getElementById('licznik').innerHTML = "Nacisnąłeś " + str + " element\n";
+            }
+
+        </script>
+
+    </body>
+
+</html>

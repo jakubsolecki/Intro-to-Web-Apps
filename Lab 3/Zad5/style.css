@@ -1,23 +1,23 @@
-
 div{
     color: white;
 }
 
-.outer{
+#outer{
     background: blue;
     width: 100pt;
     height: 100pt;
 }
 
-.middle{
+#middle{
     background: red;
     width: 75pt;
     height: 75pt;
 }
 
-.inner{
+#inner{
     color: black;
     background: yellow;
     width: 50pt;
     height: 50pt;
+    z-index: 5;
 }

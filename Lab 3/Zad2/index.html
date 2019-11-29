@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <!-- <link rel="stylesheet" href="style.css" /> -->
+        <title>Zad2</title>
+    </head>       
+    <body>
+        
+        <button id="btn1">Click to turn on ( ͡° ͜ʖ ͡°)</button> 
+
+        <button id="btn2">Test</button>
+
+        <p id="counter">Counter: 0</p>
+
+        <script>
+            
+            document.getElementById("btn1").addEventListener("click", counterOnOff, true);
+
+            let n = 0;
+
+            function increment(){
+                n++;
+                document.getElementById("counter").innerHTML = "Counter: " + n;    
+            }
+
+            function counterOnOff(){
+                if(document.getElementById("btn1").innerHTML == "Click to turn off"){
+                    n = 0;
+                    document.getElementById("counter").innerHTML = "Counter: " + n;
+                    document.getElementById("btn2").removeEventListener("click", increment, true);
+                    document.getElementById("btn1").innerHTML = "Click to turn on ( ͡° ͜ʖ ͡°)"
+                }
+                else{
+                    document.getElementById("btn1").innerHTML = "Click to turn off"
+                    document.getElementById("btn2").addEventListener("click", increment, true);
+                }               
+            }
+        </script>
+
+    </body>
+</html>
