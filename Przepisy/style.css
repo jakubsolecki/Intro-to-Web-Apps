@@ -100,7 +100,7 @@ header{
     /* border: 0.2rem solid red; */
 }
 
-article.top{
+div.top{
     grid-column: 2 / 3;
     padding: 5rem;
     background-color: rgba(255, 255, 255, 0.527);
@@ -109,13 +109,13 @@ article.top{
     /* border: 0.2rem solid red; */
 }
 
-article.top h1{
+div.top h1{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.5rem;
     text-align: center;
 }
 
-article.top p{
+div.top p{
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.5rem;
     justify-content: center;
@@ -139,7 +139,7 @@ main{
     
 }
 
-article.przepis > h2, .ad h2{
+div.przepis > h2, .ad h2{
     text-align: center;
     font-size: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -148,7 +148,7 @@ article.przepis > h2, .ad h2{
     
 }
 
-article.przepis img{
+div.przepis img{
     float: left;
     height: 30rem;
     width: 30rem;
@@ -188,20 +188,22 @@ section{
     display: grid;
     grid-template-areas: 
     "kafelek kafelek kafelek"
+    "kafelek kafelek kafelek"
+    "kafelek kafelek kafelek"
     "kafelek kafelek kafelek";
     grid-template-columns: 33% auto 33%;
-    grid-template-rows: 20rem 20rem;
+    grid-template-rows: 20rem 20rem auto auto;
     row-gap: 1rem;
     column-gap: 0.5rem;
     padding: 0 10pt;
     /* border: 0.2rem solid red; */
 }
 
-section > div{
+section div{
     border: 0.2rem solid rgb(255, 136, 0);
     border-radius: 2rem;
     opacity: 1;
-    height: auto;
+    height: 20rem;
     transition: .5s ease;
     backface-visibility: hidden;
     align-items: center;
@@ -211,33 +213,33 @@ section > div{
     background-position: center;
 }
 
-.top_left{
+/* .top_left{
     background-image: url(img/bogracz-tradycyjny.webp);
-}
+} */
 
-.top_center{
+/* .top_center{
     background-image: url(img/gyros.webp);
-}
+} */
 
-.top_right{
+/* .top_right{
     background-image: url(img/mufinki.webp);
+} */
 
-}
-
-.bottom_left{
+/* .bottom_left{
     background-image: url(img/zapiekane-ziemniaki-serowe.webp);
-}
+} */
 
-.bottom_center{
+/* .bottom_center{
     background-image: url(img/kebab-w-kajzerce.webp);
-}
+} */
 
-.bottom_right{
+/* .bottom_right{
     background-image: url(img/jogurtowy-sernik758161.webp);
-}
+} */
 
-section > div:hover{
+section div:hover{
     opacity: 0.9;
+    cursor: pointer;
 }  
 
 section a{
@@ -321,7 +323,7 @@ footer .four{
         background-position: right;
     }
 
-    article.top{
+    div.top{
         padding: 0;
     }
 
@@ -361,7 +363,7 @@ footer .four{
         grid-template-columns: 40% auto;
     }
 
-    article.top{
+    div.top{
         grid-column: 1 / 2;
     }
 }
@@ -396,6 +398,9 @@ footer .four{
         grid-template-areas: 
         "kafelek kafelek"
         "kafelek kafelek"
+        "kafelek kafelek"
+        "kafelek kafelek"
+        "kafelek kafelek"
         "kafelek kafelek";
     }
 
@@ -405,7 +410,7 @@ footer .four{
         grid-template-columns: 100%;
     }
 
-    article.top{
+    div.top{
         padding: 0;
     }
     
@@ -414,7 +419,7 @@ footer .four{
         height: auto;
     }
 
-    article.przepis h2, .ad h2{
+    div.przepis h2, .ad h2{
         text-align: center;
         font-size: 2rem;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -441,6 +446,12 @@ footer .four{
         "kafelek" 
         "kafelek"
         "kafelek" 
+        "kafelek"
+        "kafelek" 
+        "kafelek"
+        "kafelek" 
+        "kafelek"
+        "kafelek" 
         "kafelek";
     }
 
@@ -458,4 +469,119 @@ footer .four{
     .ad{
         display: none;
     }
+}
+
+
+/* MODYFIKACJE Z UŻYCIEM JS NA LAB 4  */
+
+#addTile {
+    position: fixed;
+    top: 30%;
+    right: -272px;
+    z-index: 100;
+    transition: right 0.5s ease-out 0s;
+}
+ 
+#addTile:hover {
+    right: 0;
+}
+
+#addTile #btn-title {
+    width: 150px;
+    /* border: 2px solid #dd4124;
+    background: #6e8f3d; */
+    border: 2px solid #dd4124;
+    background: #ffd753;
+    /* color: #FFFFFF; */
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px 5px 25px 5px;
+    text-align: center;
+    position: relative;
+    top: 140px;
+    left: -90px;
+    transform: rotate(-90deg);
+    z-index: 1;
+}
+ 
+#addTile #content {
+    width: 250px;
+    height: 27.5;
+    padding: 10px;
+    border-top: 2px solid #dd4124;
+    border-right: none;
+    border-bottom: 2px solid #dd4124;
+    border-left: 2px solid #dd4124;
+    z-index: 20;
+    background: #ef7f21;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+}
+
+#sendForm{
+    background-color: #f1f1f1;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #6e8f3d;
+}
+
+#sendForm:hover {
+    background-color: #5d7e2c;
+    color: #fff;
+    transition-duration: 0.4s;
+  }
+
+#clearForm{
+    background-color: #f1f1f1;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #dd4124;
+}
+
+#clearForm:hover{
+    background-color: #cc3013;
+    color: #fff;
+    transition-duration: 0.4s;
+  }
+
+article{
+    overflow: hidden;
+    height: 20.4rem;
+    /* display: flex; */
+    /* position: relative; */
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.tester{
+    /* position: relative; */
+    height: 20rem;
+}
+
+div.algorithm{
+    /* position: absolute; */
+    height: 20rem;
+}
+
+form{
+    font-size: medium;
+}
+
+.algorithm p{
+    padding: 0 10px;
+    width: inherit;
+    word-wrap: normal;
 }
